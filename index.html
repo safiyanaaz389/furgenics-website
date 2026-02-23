@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  .header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 14px 20px;
+    position: absolute;
+    top: 0;
+
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .navcenter {
+    gap: 20px;
+    list-style-type: none;
+  }
+
+  .navcenter ul {
+    display: flex;
+    gap: 20px;
+
+  }
+
+  .navcenter li {
+    list-style-type: none;
+
+  }
+
+  .icons {
+    display: flex;
+    margin-right: 35px;
+    gap: 16px;
+    align-items: center;
+
+  }
+
+  .logo ul {
+    margin-right: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .button {
+    border: none;
+    border-radius: 18px;
+    padding: 5px 22px;
+    background-color: rgb(64, 64, 126);
+    outline: none;
+    color: rgb(185, 185, 229)
+  }
+
+  .imag1 {
+    position: relative;
+  }
+
+  .imag1 img {
+    width: 100%;
+  }
+
+  .button2 {
+    border-radius: 15px;
+    padding: 10px 10px;
+    background-color: rgb(27, 27, 90);
+    color: rgb(177, 209, 241);
+    width: 10%;
+    border: none;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 20px
+  }
+
+  .content {
+
+
+    max-width: 50%;
+    text-align: left;
+  }
+
+
+
+  /* 2nd section */
+
+  h1 {
+    font-size: 98px;
+    color: rgb(39, 39, 155);
+    margin-left: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+  }
+
+  h2 {
+    font-size: 18px;
+    color: rgb(39, 39, 155);
+    margin-left: 45px;
+  }
+
+  h3 {
+    margin-top: 21px;
+    margin-left: 40px;
+    font-size: 14px;
+    color: rgb(57, 91, 103);
+    font-style: initial;
+    line-height: 18px;
+  }
+
+
+  .imag2 img {
+    width: 18%;
+    margin-left: 89px;
+    margin-top: 20px;
+  }
+
+  .containing {
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+
+  .imag3 img {
+    width: 75%;
+    margin-top: -51px;
+  }
+
+  .imag3 {
+    display: flex;
+    /* margin-bottom: 30px; */
+    justify-content: space-around;
+    /* margin-top: 19px; */
+  }
+
+
+  h4 {
+
+    margin-left: 40px;
+    font-size: 14px;
+    color: rgb(57, 91, 103);
+    line-height: 18px;
+  }
+
+  .banner-3 {
+    display: flex;
+  }
+
+  /* 3rdsection */
+
+  .products {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+
+  }
+
+  .branding {
+    background-color: skyblue;
+    padding-top: 20px;
+
+
+  }
+
+  h6 {
+    font-size: 20px;
+    color: rgb(60, 60, 108);
+
+  }
+
+  p {
+    font-size: 20px;
+    color: rgb(60, 60, 108);
+    font-weight: bold;
+    margin-left: 30px;
+    text-align: center;
+
+  }
+
+  h5 {
+    font-size: 90px;
+    color: rgb(60, 60, 108);
+    margin-left: 40px;
+  }
+
+  .subtitle {
+    margin-bottom: 30px;
+    margin-right: 80px;
+  }
+
+  .shop-btn {
+    background-color: rgb(36, 36, 74);
+    color: skyblue;
+    border-radius: 27px;
+    padding: 8px 22px;
+    background-color: rgb(64, 64, 126);
+    border: none;
+    margin-left: 316px;
+    margin-bottom: 15px;
+  }
+
+  .product-btn {
+    background-color: rgb(36, 36, 74);
+    color: skyblue;
+    border-radius: 18px;
+    padding: 8px 22px;
+    background-color: rgb(64, 64, 126);
+    border: none;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+
+  /* 4Rth-SECTION */
+  .box-wrap1 {
+    background-color: rgb(65, 65, 130);
+    display: flex;
+    gap: 29px;
+    height: 269px;
+    padding-top: 85px;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: center;
+    /* margin-top: 29px; */
+  }
+
+
+
+  .box-wrap1>div {
+    background-color: rgb(227, 223, 223);
+    width: 29px;
+    margin-left: 10px;
+    height: 92px;
+    padding: 80px 174px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: rgb(26, 26, 208);
+    display: flex;
+    font-weight: bold;
+    justify-content: right;
+    box-sizing: border-box;
+    /* gap: 10px; */
+  }
+
+  .box-wrap2 {
+    background-color: rgb(65, 65, 130);
+    display: flex;
+    gap: 29px;
+    height: 238px;
+    padding-bottom: 10px;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: center;
+    /* margin-bottom: 96px; */
+  }
+
+
+
+  .box-wrap2>div {
+    background-color: rgb(227, 223, 223);
+    width: 30px;
+    margin-left: 7px;
+    height: 63px;
+    padding: 79px 176px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: rgb(26, 26, 208);
+    display: flex;
+    font-weight: bold;
+    justify-content: right;
+
+    /* gap: 10px; */
+  }
+
+  /* 5TH-SECTION */
+  .satisfaction {
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .satisfaction img {
+    width: 100%;
+
+  }
+
+  .pet-grooming {
+    position: absolute;
+    top: 375%;
+    margin-left: 380px;
+  }
+
+  .satisfaction h5 {
+    font-size: 20px;
+  }
+
+  /* 6TH-SECTION     */
+  .review {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .stars {
+    list-style-type: none;
+    display: flex;
+    color: skyblue;
+    width: 24px;
+    height: 24px;
+  }
+
+  .rating img {
+    padding-left: 100px;
+
+  }
+
+  .rating h2 {
+    padding-left: 59px;
+  }
+
+  /* 7th-SECTION */
+  .footer {
+
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 30px;
+    margin-right: 10px;
+  }
+
+  .footer li {
+    list-style-type: none;
+    color: white;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+
+
+  }
+
+  .footer h3 {
+    color: white;
+    font-size: 38px;
+    margin-left: 12px;
+
+  }
+
+  .footer h4 {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+  }
+
+  .footer input {
+    list-style-type: none;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 65%;
+    color: aliceblue;
+    margin-left: 13px;
+    background-color: transparent;
+  }
+
+  input::placeholder {
+    color: aliceblue;
+  }
+
+  .footer-backside {
+    background-color: rgb(47, 47, 95);
+    height: 500px;
+    width: 100%;
+  }
+
+  .link a {
+    font-size: 10px;
+    display: flex;
+    justify-content: end;
+    color: aliceblue;
+    margin-right: 20px;
+    padding-bottom: 10px;
+  }
+
+  .brand img {
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    width: 95%;
+    margin-top: 70px;
+    margin-left: 35px;
+
+  }
+
+  .tagline {
+    color: aliceblue;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer li {
+    margin-left: 35px;
+  }
+
+  .submit-btn {
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: aliceblue;
+    background-color: rgb(50, 50, 122);
+    border-radius: 25px;
+    margin-top: 15px;
+    border: none;
+  }
+
+  .learnmore-btn {
+    background-color: rgb(36, 36, 74);
+    color: rgb(235, 235, 242);
+    border-radius: 18px;
+    padding: 9px 19px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-weight: bolder;
+    margin-top: 43px;
+    border: none;
+  }
+
+  .fa-cart-shopping {
+    color: rgb(32, 32, 104);
+  }
+
+  .fa-solidfa-arrow-right {
+    color: skyblue;
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="header">
+    ON NOW-
+    FREE SHIPPING ON ALL ORDERS!
+  </div>
+  <div class="imag1">
+    <img src="images/extendedheader 1 (1).png">
+
+
+
+    <div class="navbar">
+      <div class="navcenter">
+        <ul>
+          <li> <a href="#" class="button"> Shop </a> </li>
+          <li> <a href="#"> Home </a> </li>
+          <li> <a href="#">Why Furgenics? </a> </li>
+        </ul>
+
+      </div>
+
+      <div class="logo" style="margin-right: 154px;">
+        <ul>
+          <li> <img src="images/Group.png"></li>
+        </ul>
+      </div>
+
+      <div class="icons">
+        <i class="fa fa-search"></i>
+        <i class="fa-solid fa-cart-shopping" style="color: rgb(32, 32, 104);"></i>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+
+  2nd-section -->
+
+
+  <!-- <h1> Why Frugenics?</h1>
+  <h2>
+    lorem ipsumLorem Ipsum is simply dummy
+    text of the printing <br> typesetting industry
+    Lorem Ipsum has.
+  </h2>
+
+  <div class="imag2">
+    <img src="images/Group 20.png">
+  </div>
+
+  <div class="containing">
+    <div class="imag3">
+      <img src="images/Isolation_Mode.png">
+    </div>
+    <div class="text">
+      <h3>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum hrinter took a galley
+        of type and scrambled it to make a type.<br>ing, remaining essentially unchanged. It was
+        popularised in t Letraset sheets <br>containing Lorem Ipsum passages, and more recently with desktop publishi
+      </h3>
+      <h4>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum hrinter took a galley
+        of type and scrambled it to make a type book.<br>ing, remaining essentially unchanged. It was
+        popularised in t Letraset sheets <br>containing Lorem Ipsum passages, and more recently with desktop publi
+        sof
+      </h4>
+      <h4>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum hrinter took a galley
+
+      </h4>
+
+      <button class="learnmore-btn">
+
+        Learn more
+        <a href="#">
+
+          <i class="fa-solid fa-arrow-right" style="color:rgb(251, 253, 255);"> </i>
+
+        </a>
+      </button>
+
+    </div>
+
+    </button>
+
+  </div>
+
+
+
+  <!-- <3rdsection -->
+
+  <div class="branding">
+    <h5> Shop shampoo</h5>
+    <div class="banner-3">
+      <h6 style="margin-bottom: 22px ;margin-left: 51px;"> Learn more about our full range of pet shampoo products.
+      </h6>
+      <button class="shop-btn">
+
+        See All
+        <a href="#">
+          <i class="fa-solid fa-arrow-right" style="color:skyblue;"> </i>
+        </a>
+      </button>
+    </div>
+
+    <div class="products">
+      <div class="product">
+        <img src="images/beigebg.png">
+        <h6> ultra gentle shampoo </h6>
+        <p> $xx.xx</p>
+
+        <button class="product-btn">
+          Shop now
+          <a href="#">
+            <i class="fa-solid fa-arrow-right" style="color:skyblue;"> </i>
+          </a>
+        </button>
+
+      </div>
+
+      <div class="product">
+        <img src="images/Mask group.png">
+        <h6> Dregreasing shampoo </h6>
+        <p> $xx.xx</p>
+        <button class="product-btn">
+          Shop now
+          <a href="#">
+            <i class="fa-solid fa-arrow-right" style="color:rgb(177,209,241);"> </i>
+          </a>
+        </button>
+      </div>
+
+      <div class="product">
+        <img src="images/Mask group (1).png">
+        <h6> oatmeal shampoo </h6>
+        <p> $xx.xx</p>
+        <button class="product-btn">
+
+          Shop now
+          <a href="#">
+            <i class="fa-solid fa-arrow-right" style="color:skyblue;"> </i>
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4rth SECTION -->
+
+
+  <div class="box-wrap1">
+    <div>Shop Shampoo</div>
+    <div>Shop Conditioner</div>
+  </div>
+
+  <div class="box-wrap2">
+    <div>Shop Washes</div>
+    <div>Shop DentalCare</div>
+  </div>
+
+  <!-- 5th-SECTION -->
+
+
+
+
+  <div class="satisfaction">
+    <img src="images/Mask group (2).png">
+  </div>
+
+  <div class="pet-grooming">
+
+    <img src="images/Satisfaction.png">
+  </div>
+  <p style="color: rgb(62, 62, 113); font-size: 20px;margin-left:20px;margin-top:20px;margin-bottom:100px"> send ut
+    perrscipate iste natus error sir accusantium dolormque laudantium tatam rem aoerium,
+    eadque ipsa quae ab illo Neque porro quisquam estdolo sir ametquarum ,concestum adpictidy
+    quia non numqua elus modi tempora ivicidnt ut labore magnm aliquim volumtetum. </p>
+
+
+  <div class="review">
+    <div class="rating">
+
+      <img src="images/Group 5739.png">
+      <h2>Incredible. </h2>
+      <p> Lorem ipsum dolor sit amet,<br>
+        consectetur adipiscing elit, sed do <br>
+        eiusmod tempor inciddidunt ut<br>
+        labore et dolor magna veniam, quis <br>
+        nostred exercitation ullamco.
+      </p>
+      <p style="padding-top:10px;padding-bottom: 50px;"> Greg M.</p>
+
+    </div>
+
+    <div class="rating">
+      <img src="images/Group 5739.png">
+      <h2>I love it! </h2>
+      <p> Lorem ipsum dolor sit amet,<br>
+        consectetur adipiscing elit, sed do <br>
+        eiusmod tempor inciddidunt ut<br>
+        labore et dolor magna veniam, quis <br>
+        nostred exercitation ullamco.
+      </p>
+      <p style="padding-top:10px"> Zoo S.</p>
+    </div>
+
+    <div class="rating">
+      <img src="images/Group 5739.png">
+      <h2> just Awesome </h2>
+      <p> Lorem ipsum dolor sit amet,<br>
+        consectetur adipiscing elit, sed do <br>
+        eiusmod tempor inciddidunt ut<br>
+        labore et dolor magna veniam, quis <br>
+        nostred exercitation ullamco.
+      </p>
+      <p style="padding-top:10px"> Vince A.</p>
+    </div>
+
+  </div>
+  <!-- 7th-SECTION -->
+
+  <div class="footer-backside">
+    <div class="footer">
+      <div>
+        <h3> join the mailing list</h3>
+        <input type="email" placeholder="Enter your Email">
+        <button class="submit-btn">
+          Sumbit <a href="#">
+            <i class="fa-solid fa-arrow-right" style="color:rgb(248, 248, 248);"> </i>
+          </a> </button>
+      </div>
+      <div>
+        <h4> About </h4>
+
+        <!-- ( here <h1></h1> take as aheading purpouse othrwise we used there also  <li></li> ) -->
+
+        <ul>
+
+          <li> Our story</li>
+          <li> Reviews</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li>Help and FAQ</li>
+          <li>Shipping and returns</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <h4> Other</li>
+            <li> Terms and conditions</li>
+            <li> privacy and policy </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <ul class="bottom-side">
+      <li class="brand">
+        <img src="images/Group (2).png">
+      </li>
+      <li> <a href="c 2024 furgenics pet grooming"> </a></li>
+      <li class="link"> <a href="https://www.furgenics.com"> &copy 2024 furgenics get grooming </a> </li>
+    </ul>
+    <ul>
+
+
+
+  </div>
+
+  </div>
+
+
+
+
+  </div>
+
+  </div>
+
+
+
+
+  </div>
+
+
+</body>
+
+</html>
+
+<body>
